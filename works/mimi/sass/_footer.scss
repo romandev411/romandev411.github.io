@@ -1,0 +1,274 @@
+.footer-page{
+	border-top: 2px solid #000;
+	position: relative;
+	margin-top: 10px;
+	padding-top: 33px;
+	padding-bottom: 60px;
+	font-size: 1px;
+	
+	
+	& > .container{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 17px;
+	}
+	
+	&:before, &:after{
+		content: '';
+		display: block;
+		height: 2px;
+		width: 100%;
+		background: #000;
+		position: absolute;
+		left: 0;
+	}
+
+	&:before{
+		top: -7px;
+	}
+
+	&:after{
+		top: -12px;
+	}
+}
+
+.cont-info__phone{
+	display: flex;
+	align-items: center;
+}
+
+.footer-page__contact, .footer-page__dw{
+	flex: 1;
+}
+
+.cont-info__adress{
+	font-size: 12em;
+	margin-bottom: 1px;
+	letter-spacing: .05em;
+}
+
+.cont-info__index{
+	font-family: "Arial Rounded MT Bold", sans-serif;
+	letter-spacing: -0.06em;
+}
+h
+.cont-info__phone{
+	display: flex;
+	align-items: center;
+}
+
+.cont-info__phone-number{
+	margin-right: 5px;
+	font-family: "Arial Rounded MT Bold", sans-serif;
+	font-size: 22em;
+	letter-spacing: 0;
+}
+
+
+.cont-info__email{
+	color: $fff;
+	font-size: 11em;
+	letter-spacing: .1em;
+}
+
+.form-add__btn{
+	background: none;
+	border: none;
+	display: block;
+	cursor: pointer;
+	font-family: $fam;
+	font-size: 12em;
+	outline: none;
+	padding: 0;
+	font-weight: 700;
+	letter-spacing: .09em;
+	line-height: 1;
+	text-align: left;
+	
+	mark{
+		background: none;
+		color: $fff;
+	}
+}
+
+.form-add{
+	padding-left: 5px;
+	display: flex;
+	align-items: center;
+	
+	::-webkit-input-placeholder {color: $orange; opacity: 1; transition: color .3s;	font-family: $fam;}
+	::-moz-placeholder          {color: $orange; opacity: 1; transition: color .3s;	font-family: $fam;}
+	:-moz-placeholder           {color: $orange; opacity: 1; transition: color .3s;	font-family: $fam;}
+	:-ms-input-placeholder      {color: $orange; opacity: 1; transition: color .3s;	font-family: $fam;}
+
+	:focus::-webkit-input-placeholder {color: transparent}
+	:focus::-moz-placeholder          {color: transparent}
+	:focus:-moz-placeholder           {color: transparent}
+	:focus:-ms-input-placeholder      {color: transparent}
+}
+
+.form-add__input{
+	margin-right: 3px;
+	display: block;
+	border: none;
+	color: #fad9c2;
+	padding: 0 11px;
+	font-family: ArciformSanscyr,sans-serif;
+	outline: none;
+	background: none;
+	background-image: url(../img/bg/bg-inp.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 39px;
+	width: 119px;
+	margin-left: -2px;
+	
+}
+
+.cont-info.footer-contact__item{
+	margin-bottom: 7px;
+}
+
+.form-search__input{
+	display: block;
+	width: 114px;
+	height: 18px;
+	font-size: 12em;
+	color: $fff;
+	background: none;
+	border: none;
+	font-family: $fam;
+	outline: none;
+	border-bottom: 1px solid #000;
+	padding: 0 10px;
+	margin-right: 8px;
+}
+
+.form-search__label{
+	display: flex;
+	margin-top: -5px;
+	padding-left: 5px;
+}
+
+.form-search__btn{
+	background: none;
+	padding: 0;
+	outline: none;
+	border: none;
+	display: block;
+	cursor: pointer;
+	margin-bottom: -20px;
+}
+
+.form-search__ico{
+	display: block;
+	width: 23px;
+	height: 23px;
+	
+	
+}
+
+.footer-list{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.footer-page__menu{
+	flex: 2;
+	max-width: 370px;
+}
+
+.footer-list__link{
+	font-size: 12em;
+	transition: color .3s;
+	letter-spacing: 0;
+	
+	&:hover{
+		color: $fff;
+	}
+}
+
+.footer-page__dw{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.copyright{
+	font-size: 11em;
+	text-align: right;
+}
+
+.download-sect__lists{
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.download-wp{
+	font-size: 12em;
+	text-align: center;
+}
+
+.download-wp.download-wp--fff{
+	text-align: right;
+	.download-wp__title{
+		color: $fff;
+		margin-bottom: 2px;
+		display: inline-block;
+	}
+	
+	.download-wp__link{
+		padding: 4px 8px;
+		background-image: url('../img/bg/bg-text1.png');
+		padding-bottom: 6px;
+		padding-top: 4px;
+	}
+	
+	.download-wp__link.download-wp__link--dec-bg{
+		background-image: url('../img/bg/textffbg.png');
+	}
+}
+
+
+
+.download-sect__item:not(:last-child){
+	margin-right: 5px;
+}
+
+.download-sect__item:first-child{
+	margin-right: 10px;
+}
+
+.download-wp__link{
+	color: $orange;
+	display: inline-block;
+	padding: 5px 11px;
+	background-image: url('../img/bg/bg-text2.png');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-bottom: 6px;
+	padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

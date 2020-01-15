@@ -1,0 +1,121 @@
+.input {
+  &.error {
+    .input__title {
+      color: $error-color;
+    }
+
+    .input__line.input__line:before {
+      width: 100%;
+      background-color: $error-color;
+    }
+
+    .input__alert {
+      display: block;
+    }
+  }
+  
+  &.eye {
+    position: relative;
+  }
+}
+
+.input__label {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+
+  @include hover {
+    &:hover{
+      .input__line {
+        background-color: rgba($main-color, .6);
+      }
+
+      .input__placeholder {
+        color: rgba($text-white, .6);
+      }
+    }
+  }
+}
+
+.input__title {
+  display: block;
+  color: $main-color;
+  font-size: $sub-fz;
+}
+
+.input__placeholder {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  transform: translateX(-101%) scale(.3);
+  transition: transform $anim, color $anim;
+  font-size: $main-fz;
+  color: rgba($text-white, .3);
+  cursor: text;
+  will-change: transform;
+}
+
+.input__item {
+  display: block;
+  width: 100%;
+  height: 38px;
+  color: $text-white;
+}
+
+.input__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgba($main-color, .3);
+  transition: background-color $anim;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #7D77E9;
+    transition: width $anim;
+  }
+}
+
+.input__item:placeholder-shown ~ .input__placeholder {
+  transform: translateY(0) scale(1);
+}
+
+.input__item:placeholder-shown ~ .input__line:before {
+  width: 0;
+}
+
+.input__item:focus ~ .input__placeholder {
+  transform: translateX(-101%) scale(.3);
+}
+
+.input__item:focus ~ .input__line {
+  &:before {
+    width: 100%;
+  }
+}
+
+.input__alert {
+  display: none;
+  padding-top: 4px;
+  line-height: 19px;
+  font-size: $low-fz;
+  color: $error-color;
+  font-weight: 400;
+}
+
+.input__eye {
+  position: absolute;
+  top: 29px;
+  right: 2px;
+  width: 26px;
+  height: 17px;
+  color: transparent;
+
+  &:active {
+    opacity: .8;
+  }
+}

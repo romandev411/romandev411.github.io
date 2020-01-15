@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+	font: 400 14px/1 "Myriad Pro", Arial, Helvetica, sans-serif;
+	background: #f6f6f6;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container{
+	padding: 0 15px;
+	margin:0 auto;
+}

@@ -1,0 +1,86 @@
+<div class="sign-up">
+    <div class="sign-up__progress">
+        <div class="progress">
+            <div class="progress__item  active">
+                <div class="progress__title">Account</div>
+                <div class="progress__ico"></div>
+            </div>
+
+            <div class="progress__item  active">
+                <div class="progress__title">Profile</div>
+                <div class="progress__ico"></div>
+            </div>
+
+            <div class="progress__item">
+                <div class="progress__title">Verification</div>
+                <div class="progress__ico"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sign-up__desc">
+        <div class="sign-up__selection">
+            <div class="sign-up__selection-title">Pick a account</div>
+
+            <div class="sign-up__selection-wrap">
+                <div class="sign-up__selection-item">
+                    <div class="selection-item  active">
+                        <div class="selection-item__text">Business account</div>
+
+                        <div class="selection-item__ico  selection-item__ico--user-2">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user-2"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sign-up__selection-item">
+                    <div class="selection-item">
+                        <div class="selection-item__text">Personal account</div>
+
+                        <div class="selection-item__ico  selection-item__ico--user-1">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user-1"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sign-up__inputs">
+            <div class="sign-up__input">
+                {{ macros.input('E-mail', 'Enter your e-mail', 'email', 'error', '', 'This e-mail is alredy use') }}
+            </div>
+
+            <div class="sign-up__input">
+                {{ macros.input('Password', 'Enter your password', 'password') }}
+            </div>
+
+            <div class="sign-up__input-double">
+                <div class="sign-up__double-input">
+                    {{ macros.input('Your Country', 'Enter your country', 'text') }}
+                </div>
+
+                <div class="sign-up__double-select">
+                    {{ macros.select('Currency') }}
+                </div>
+            </div>
+
+            <div class="sign-up__checks">
+                <div class="sign-up__checks-item">
+                    {{ macros.checkbox('', 'I accept Reel Empero') }}
+                </div>
+
+                <div class="sign-up__checks-item">
+                    {{ macros.checkbox('checked', ' I’d like to recieve esscential notification') }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sign-up__btn">
+        {{ macros.btn('Sign Up') }}
+    </div>
+</div>

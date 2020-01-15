@@ -1,0 +1,51 @@
+.step-btn {
+  padding: 0 1.2em;
+  background-color: currentColor;
+  border: 2px solid currentColor;
+  border-radius: 0.395em;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 2.053;
+  font-size: 38px;
+  letter-spacing: .075em;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: opacity $anim, background-color $anim;
+  
+  &:not(.submit) {
+    visibility: hidden;
+  }
+  
+  &.submit:not(.active) {
+    &:hover {
+      color: #aaa9a9;
+    }
+  }
+  
+  &.step-btn--min {
+    border-radius: 0.577em;
+    font-size: 26px;
+    line-height: 2.9;
+  }
+  
+  &.active {
+    visibility: visible;
+  }
+  
+  & > span {
+    color: $white;
+    transition: color $anim;
+  }
+  
+  &:active {
+    opacity: .7;
+  }
+  
+  &:hover {
+    background-color: $white;
+    
+    & > span {
+      color: inherit;
+    }
+  }
+}

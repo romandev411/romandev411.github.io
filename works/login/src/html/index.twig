@@ -1,0 +1,12 @@
+{# index.twig #}
+{% import "include/macros.twig" as macros %}
+{% extends "include/page.twig" %}
+{% set title = 'login' %}
+
+{% block main %}
+    <div class="modal-wrap">
+        {% include 'login/login.twig' %}
+    </div>
+{% endblock %}
+
+{% import "login.twig" as input %}

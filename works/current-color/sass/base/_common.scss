@@ -1,0 +1,44 @@
+body {
+  font-family: $open-sans;
+  color: $text-color;
+  font-weight: 600;
+  letter-spacing: .05em;
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+$pink: #fc5095;
+$orange: #fc8950;
+$yellow: #fcc150;
+$blue: #1da7c0;
+
+.pink {
+  color: #fc5095;
+}
+
+.orange {
+  color: $orange;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.blue {
+  color: $blue;
+}
+
+
+
+
+
+
+
+
+

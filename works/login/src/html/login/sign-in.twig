@@ -1,0 +1,25 @@
+<div class="sign-in">
+    <div class="sign-in__ban">
+        <div class="sign-in__pic">
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#laptop"></use>
+            </svg>
+        </div>
+    </div>
+
+    <div class="sign-in__desc">
+        <div class="sign-in__inputs">
+            <div class="sign-in__input">
+                {{ macros.input('Login', 'Enter your nickname or e-mail', 'text') }}
+            </div>
+
+            <div class="sign-in__input">
+                {{ macros.input('Password', 'Enter your password', 'password', '', 'eye') }}
+            </div>
+        </div>
+
+        <div class="sign-in__btn">
+            {{ macros.btn('Log in') }}
+        </div>
+    </div>
+</div>

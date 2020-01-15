@@ -1,0 +1,18 @@
+<!DOCTYPE html>{# layout.twig #}
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  {% block main %}{% endblock %}
+  <script src="../js/build.js"></script>
+
+  <div hidden>
+      {% include 'sprite.svg' %}
+  </div>
+</body>
+</html>

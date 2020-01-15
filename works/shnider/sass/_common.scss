@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+* {
+	outline: none;
+}
+body {
+	font: 300 13px/1.428 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a:active {
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+.header-container {
+	width: 78%;
+	margin: auto;
+	padding: 0 20px;
+	max-width: 2000px;
+}
+
+.logo{
+display: block;
+}
+.burger{
+display: none;
+}

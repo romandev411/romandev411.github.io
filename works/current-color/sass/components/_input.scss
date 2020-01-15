@@ -1,0 +1,184 @@
+//check input
+.input-check {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 21.3em;
+  font-size: 18px;
+  text-align: center;
+}
+
+.input-check__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: -1;
+  opacity: 0;
+  
+  &:checked ~ .input-check__btn {
+    background-color: currentColor;
+    
+    .input-check__text {
+      color: $white;
+    }
+  }
+}
+
+.input-check__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.333em;
+  background-color: $white;
+  border: 1px solid #d3d3d3;
+  border-radius: .389em;
+  transition: color $anim, background-color $anim;
+  cursor: pointer;
+}
+
+.input-check__text {
+  display: flex;
+  align-items: center;
+  color: $text-color;
+  font-size: 1.444em;
+  transition: color $anim;
+  
+  &::selection {
+    background-color: transparent;
+  }
+}
+
+.input-check__ico {
+  height: 1.823em;
+  width: 1.338em;
+  margin-right: .7em;
+}
+
+//text input
+.input-item {
+  display: block;
+  color: $text-color;
+}
+
+.input-title {
+  display: block;
+  padding: 0 0 4px 4px;
+  font-size: 18px;
+  letter-spacing: .025em;
+  font-size: 18px;
+  color: $text-color;
+}
+
+.input-item__wrap {
+  position: relative;
+  display: block;
+  background-color: $white;
+  border-radius: .389em;
+}
+
+.input-item__input {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 4.333em;
+  border-radius: .389em;
+  padding: 0 .9em;
+  border: 1px solid #d3d3d3;
+  
+  &.no-valid {
+    border-color: $error-color;
+    
+    & ~ .error-alert {
+      visibility: visible;
+      color: $error-color;
+      font-weight: 300;
+      opacity: 1;
+    }
+  }
+}
+
+.error-alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 .9em;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity $anim, visibility $anim;
+}
+
+//.agreement-check
+
+.agreement-check {
+  position: relative;
+  display: flex;
+  color: $text-color;
+  font-weight: 300;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.agreement-check__ico {
+  position: relative;
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  margin-right: 11px;
+  background-color: $white;
+  border: 1px solid;
+  border-radius: 1px;
+  
+  &:before {
+    content: "";
+    position: absolute;
+    left: .3em;
+    top: 0;
+    bottom: 0;
+    width: .28em;
+    height: .57em;
+    margin: auto;
+    border: .1em solid;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity $anim;
+  }
+}
+
+.agreement-check__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+
+  &:checked ~ .agreement-check__ico {
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

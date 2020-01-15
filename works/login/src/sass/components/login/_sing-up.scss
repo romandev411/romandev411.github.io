@@ -1,0 +1,93 @@
+.sign-up {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.sign-up__progress {
+  margin-bottom: 24px;
+}
+
+.sign-up__desc {
+  display: flex;
+  margin-bottom: 83px;
+
+  @include media-sm {
+    display: block;
+    margin-bottom: 28px;
+  }
+}
+
+.sign-up__selection {
+  width: 285px;
+  margin-right: 43px;
+
+  @include media-sm {
+    margin-right: 0;
+    margin-bottom: 39px;
+    width: auto;
+  }
+}
+
+.sign-up__inputs {
+  flex-grow: 1;
+}
+
+.sign-up__selection-wrap {
+  @include media-sm {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+.sign-up__selection-item {
+  @include media-sm {
+    width: 50%;
+    padding: 0 12px;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 24px;
+
+    @include media-sm {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sign-up__selection-title {
+  margin-bottom: 16px;
+  font-size: $sub-fz;
+  color: rgba($main-color, .6);
+}
+
+.sign-up__input {
+  margin-bottom: 28px;
+}
+
+.sign-up__input-double {
+  display: flex;
+  margin-bottom: 29px;
+}
+
+.sign-up__double-input {
+  flex-grow: 1;
+  margin-right: 19px;
+}
+
+.sign-up__double-select {
+  width: 104px;
+}
+
+.sign-up__checks-item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.sign-up__btn {
+  display: flex;
+  justify-content: center;
+}

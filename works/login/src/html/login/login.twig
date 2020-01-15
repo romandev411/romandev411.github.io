@@ -1,0 +1,25 @@
+<div class="login  login--modal">
+    <div class="login__top">
+        <div class="login__nav">
+            <button class="login__nav-btn  active" type="button" id="sin-up-btn">Sign Up</button>
+            <button class="login__nav-btn" type="button" id="sin-in-btn">Log In</button>
+        </div>
+
+        <button class="login__close" type="button">
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+            </svg>
+        </button>
+    </div>
+
+    <div class="login__desc">
+        <div class="login__desc-item  active" id="sin-up-desc">
+            {% include 'sign-up.twig' %}
+        </div>
+
+        <div class="login__desc-item" id="sin-in-desc">
+            {% include 'sign-in.twig' %}
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <title>card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+  <link rel="icon" type="image/png" href="img/fa.png">
+</head>
+<body>
+
+<header class="header-page">
+  <div class="header-page__logo">
+    <div class="logo">
+      <a class="logo__link" href="#">
+        <img class="logo__pic" src="img/logo.svg" alt="brand-name">
+      </a>
+    </div>
+  </div>
+  
+  <div class="header-page__mobil-menu">
+    <button class="open-menu" type="button">
+      <span></span>
+    </button>
+  </div>
+  
+  <nav class="header-page__nav">
+    <ul class="main-menu">
+      <li class="main-menu__item  active">
+        <a class="main-menu__link" href="#">Home</a>
+      </li>
+      
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Products</a>
+      </li>
+      
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Lookbook</a>
+      </li>
+      
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Collection</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="header-page__bag">
+    <a class="bag" href="#">
+      <span class="bag__text">Bag</span>
+      <span class="bag__counter">3</span>
+    </a>
+  </div>
+  
+  <div class="header-page__login">
+    <div class="login">
+      <button class="login__btn" type="button">
+        Login
+      </button>
+      
+      <button class="login__btn" type="button">
+        Sing up
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <section class="product-card  main__product-card">
+      <div class="product-galery  product-card__galery">
+        <div class="product-galery__nav-slide">
+          <div class="product-galery__nav-wrap  js-slick-slider-1">
+            <div class="product-galery__nav-item">
+              <div class="product-galery__nav-wrap-img">
+                <img class="product-galery__pic" src="img/slider/item1.png" alt="name-product">
+              </div>          
+            </div>
+            
+            <div class="product-galery__nav-item">
+              <div class="product-galery__nav-wrap-img">
+                <img class="product-galery__pic" src="img/slider/item2.png" alt="name-product">
+              </div>          
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-galery__main-slide">
+          <div class="product-galery__main-wrap  js-slick-slider-2">
+            <div class="product-galery__main-item">
+              <div class="product-galery__main-wrap-img">
+                <img class="product-galery__pic" src="img/slider/main-item1.png" alt="name-product">
+              </div>
+            </div>
+            
+            <div class="product-galery__main-item">
+              <div class="product-galery__main-wrap-img">
+                <img class="product-galery__pic" src="img/slider/main-item1.png" alt="name-product">
+              </div>
+            </div>
+            
+            <div class="product-galery__main-item">
+              <div class="product-galery__main-wrap-img">
+                <img class="product-galery__pic" src="img/slider/main-item1.png" alt="name-product">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="product-desc  product-card__desc">
+        <div class="product-desc__wrap">
+          <div class="gender-cat  product-desc__cat">
+            <i class="gender-cat__ico">
+              <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gender"></use>
+              </svg>
+            </i>
+
+            <div class="gender-cat__text">
+              Men clothes > coat & jacket
+            </div>
+          </div>
+
+          <div class="product-desc__title">
+            <h1 class="man-title">
+              Lightweight nylon knitweat in black
+            </h1>
+          </div>
+
+          <div class="product-desc__price">
+            $48.00
+          </div>
+
+          <div class="product-desc__description">
+            <div class="description__title">
+              <strong class="desc-title">
+                Description
+              </strong>
+            </div>
+
+            <div class="description__text">
+              <p>
+                Cras efficitur iaculis sapien, vel tincidunt magna egestas at. Nunc finibus, metus id fermentum. Cras efficitur iaculis sapien, vel tincidunt magna egestas at, vel tincidunt magna egestas at cras effcitur.
+              </p>
+
+              <p>
+                Cras efficitur iaculis sapien, vel tincidunt magna egestas at. Nunc finibus, metus id fermentum. 
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-desc__colour">
+          <div class="colors-check">
+            <div class="colors-check__title">
+              <strong class="desc-title   desc-title--min">
+                Colors
+              </strong>
+            </div>
+            
+            <ul class="colors-check__list">
+              <li class="colors-check__item">
+                <label class="check-color  blue">
+                  <input class="check-color__input" type="radio" name="check-color">
+                  
+                  <i class="check-color__ico"></i>
+                  
+                  <span class="check-color__text">
+                    Blue
+                  </span>
+                </label>
+              </li>
+              
+              <li class="colors-check__item">
+                <label class="check-color  brown">
+                  <input class="check-color__input" type="radio" name="check-color">
+
+                  <i class="check-color__ico"></i>
+
+                  <span class="check-color__text">
+                    Blue
+                  </span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="product-desc__btn">
+          <button class="buy-btn" type="button">
+            Buy now - $78
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="other-product  main__other">
+      <div class="section-title  other-product__title">
+        <p class="section-title__sub">
+          We thought
+        </p>
+        
+        <h2 class="section-title__main">
+          You might line these too...
+        </h2>
+      </div>
+      
+      <div class="prod-list  other-product__prod-list  js-slick-slider-3">
+        <div class="prod-list__item">
+          <a class="prod-item" href="#">
+            <div class="prod-item__img">
+              <img class="prod-item__pic" src="img/product/product1.png" alt="product">
+            </div>
+            
+            <div class="prod-item__desc">
+              <div class="prod-item__title">
+                <strong class="prod-item__name">
+                  Leather bag
+                </strong>
+                
+                <span class="prod-item__price">
+                  $78
+                </span>
+              </div>
+              
+              <div class="prod-item__sub-text">
+                Bag
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="prod-list__item">
+          <a class="prod-item" href="#">
+            <div class="prod-item__img">
+              <img class="prod-item__pic" src="img/product/product2.png" alt="product">
+            </div>
+
+            <div class="prod-item__desc">
+              <div class="prod-item__title">
+                <strong class="prod-item__name">
+                  Gift box colors
+                </strong>
+
+                <span class="prod-item__price">
+                  $78
+                </span>
+              </div>
+
+              <div class="prod-item__sub-text">
+                Gift
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="prod-list__item">
+          <a class="prod-item" href="#">
+            <div class="prod-item__img">
+              <img class="prod-item__pic" src="img/product/product3.png" alt="product">
+            </div>
+
+            <div class="prod-item__desc">
+              <div class="prod-item__title">
+                <strong class="prod-item__name">
+                  Flyknit lunar 3
+                </strong>
+
+                <span class="prod-item__price">
+                  $78
+                </span>
+              </div>
+
+              <div class="prod-item__sub-text">
+                Running Shoes
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="prod-list__item">
+          <a class="prod-item" href="#">
+            <div class="prod-item__img">
+              <img class="prod-item__pic" src="img/product/product4.png" alt="product">
+            </div>
+
+            <div class="prod-item__desc">
+              <div class="prod-item__title">
+                <strong class="prod-item__name">
+                  Wallets leather
+                </strong>
+
+                <span class="prod-item__price">
+                  $78
+                </span>
+              </div>
+
+              <div class="prod-item__sub-text">
+                Accessories
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="prod-list__item">
+          <a class="prod-item" href="#">
+            <div class="prod-item__img">
+              <img class="prod-item__pic" src="img/product/product5.png" alt="product">
+            </div>
+
+            <div class="prod-item__desc">
+              <div class="prod-item__title">
+                <strong class="prod-item__name">
+                  Shoes men
+                </strong>
+
+                <span class="prod-item__price">
+                  $78
+                </span>
+              </div>
+
+              <div class="prod-item__sub-text">
+                Running Shoes
+              </div>
+            </div>
+          </a>
+        </div>
+        
+        <div class="prod-list__item">
+          <a class="prod-item" href="#">
+            <div class="prod-item__img">
+              <img class="prod-item__pic" src="img/product/product5.png" alt="product">
+            </div>
+
+            <div class="prod-item__desc">
+              <div class="prod-item__title">
+                <strong class="prod-item__name">
+                  Shoes men
+                </strong>
+
+                <span class="prod-item__price">
+                  $78
+                </span>
+              </div>
+
+              <div class="prod-item__sub-text">
+                Running Shoes
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer-page">
+  <div class="container">
+    <span class="footer-page__text">
+      Copyright 2017
+    </span>
+  </div>
+</footer>
+
+<div hidden>
+  <svg>
+    <symbol id="gender"  viewBox="0 0 24 24">
+      <path d="M9,9C10.29,9 11.5,9.41 12.47,10.11L17.58,5H13V3H21V11H19V6.41L13.89,11.5C14.59,12.5 15,13.7 15,15A6,6 0 0,1 9,21A6,6 0 0,1 3,15A6,6 0 0,1 9,9M9,11A4,4 0 0,0 5,15A4,4 0 0,0 9,19A4,4 0 0,0 13,15A4,4 0 0,0 9,11Z" />
+    </symbol>
+  </svg>
+</div>
+
+<script src="min-js/libs.min.js"></script>
+<script src="min-js/main.min.js"></script>
+
+</body>
+</html>

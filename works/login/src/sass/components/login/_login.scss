@@ -1,0 +1,83 @@
+.login {
+  position: relative;
+  width: 100%;
+  max-width: 740px;
+  padding: 0 42px;
+  background: linear-gradient(180deg, #0F113E 0%, #090A34 100%);
+  border-radius: 16px;
+
+  @include media-sm {
+    padding: 0 20px;
+  }
+}
+
+.login--modal {
+  margin: auto;
+  margin-top: 80px;
+
+  @include media-sm {
+    margin-top: 8px;
+  }
+}
+
+.login__nav {
+  display: flex;
+}
+
+.login__nav-btn {
+  padding-top: 20px;
+  padding-right: 3px;
+  border-top: 1px solid transparent;
+  font-size: $main-fz;
+  color: rgba($text-white, .3);
+  transition: color $anim, border-color $anim;
+
+  &:active {
+    opacity: .8;
+  }
+
+  @include hover {
+    &:focus,
+    &:hover {
+      color: rgba($text-white, .6);
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &.active {
+    border-top: 1px solid #cb62ab;
+    color: $text-white;
+  }
+}
+
+.login__close {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  width: 16px;
+  height: 16px;
+  color: rgba($main-color, .4);
+  transition: color $anim;
+
+  &:active {
+    opacity: .8;
+  }
+
+  @include hover {
+    &:focus,
+    &:hover {
+      color: rgba($main-color, .9);
+    }
+  }
+}
+
+.login__desc-item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

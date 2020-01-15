@@ -1,0 +1,66 @@
+{% macro input(title, placeholder, type, class, eye, textRrror) %}
+    <div class="input {{ class }} {{ eye }}">
+        <label class="input__label">
+            <span class="input__title">{{ title }}</span>
+
+            <input class="input__item" type="{{ type|default('text') }}" placeholder="{{ placeholder }}" />
+
+            <span class="input__line"></span>
+
+            <span class="input__placeholder">{{ placeholder }}</span>
+        </label>
+
+        {% if textRrror %}
+            <div class="input__alert">{{ textRrror }}</div>
+        {% endif %}
+
+        {% if eye %}
+            <button class="input__eye" type="button">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#eye"></use>
+                </svg>
+            </button>
+        {% endif %}
+    </div>
+{% endmacro %}
+
+{% macro select(title) %}
+    <div class="select {{ class }}">
+        <span class="select__title">{{ title }}</span>
+
+        <span class="select__wrap">
+            <select class="select__item">
+                <option>USD</option>
+                <option>EUR</option>
+            </select>
+
+            <span class="select__ico">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-bottom"></use>
+                </svg>
+            </span>
+        </span>
+    </div>
+{% endmacro %}
+
+{% macro checkbox(attr, text) %}
+    <label class="checkbox">
+        <input class="checkbox__input  visually-hidden" type="checkbox" {{ attr }}>
+        <span class="checkbox__ico"></span>
+        <span class="checkbox__text">{{ text }}</span>
+    </label>
+{% endmacro %}
+
+{% macro btn(text) %}
+    <button class="btn" type="button">
+        <span class="btn__wrap">
+            <span class="btn__text">{{ text }}</span>
+
+            <span class="btn__ico">
+                <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-right"></use>
+                </svg>
+            </span>
+        </span>
+    </button>
+{% endmacro %}

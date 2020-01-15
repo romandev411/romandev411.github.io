@@ -1,0 +1,24 @@
+.modal-wrap {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 0 8px;
+  padding-bottom: 8px;
+  background: rgba(1, 1, 5, .9);
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &:before {
+      content: 'Please open in another browser';
+      color: #fff;
+      font-size: 20px;
+    }
+
+    & > * {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.btn {
+  position: relative;
+  height: 40px;
+  border-radius: 20px;
+  padding: 1px;
+  background-color: #572061;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: #cb41a3;
+    transform: scaleX(0);
+    transition: transform $anim;
+  }
+
+  &:active {
+    opacity: .8;
+  }
+
+  @include hover {
+    &:focus,
+    &:hover {
+      &:before {
+        transform: scaleX(1);
+      }
+
+      .btn__text {
+        color: $text-white;
+      }
+
+      .btn__ico {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.btn__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  height: 100%;
+  width: 100%;
+  background-color: #090a34;
+  border-radius: inherit;
+}
+
+.btn__text {
+  margin-right: 7px;
+  color: rgba($text-white, .6);
+  font-size: $main-fz;
+  transition: color $anim;
+}
+
+.btn__ico {
+  height: 30px;
+  width: 38px;
+  color: transparent;
+  opacity: .6;
+  transition: opacity $anim;
+}
